@@ -4,7 +4,6 @@ class CreateJobs < ActiveRecord::Migration[5.0]
       t.string :name, :null=>false
       t.string :place, :null=>false
       t.integer :company_id, :null=>false
-
       t.timestamps
     end
   end
