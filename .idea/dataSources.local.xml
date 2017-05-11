@@ -8,8 +8,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>admin</user-name>
-      <introspection-scope>dev_project:admin,pg_catalog,public</introspection-scope>
+      <introspection-schemas>dev_project:admin,pg_catalog,public</introspection-schemas>
       <resolve-scope>dev_project:admin,public</resolve-scope>
+      <unqualified-resolve-schemas>dev_project:admin,public</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>
