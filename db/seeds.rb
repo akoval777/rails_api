@@ -20,5 +20,28 @@ Job.create([
                {name: 'Javascript', place: 'Permanent', company_id: 2},
                {name: 'Node', place: 'Remote', company_id: 2}
            ])
+Geek.delete_all
+Geek.reset_pk_sequence
+Geek.create([
+                { name: "Mike", stack: "Sinatra React", resume: true },
+                { name: "Alex", stack: "Ruby React", resume: true },
+                { name: "Martha", stack: "Rails", resume: false },
+                { name: "Juri", stack: "Java", resume: true },
+                { name: "Andrew", stack: "PHP", resume: false },
+                { name: "Nina", stack: "Node", resume: true },
+                { name: "Bob", stack: "Front end", resume: true },
+                { name: "Kate", stack: "PHP", resume: false },
+                { name: "Boris", stack: "Full stack", resume: true },
+            ])
+
+Apply.delete_all
+Apply.reset_pk_sequence
+Apply.create([
+                 { job_id: 1, geek_id: 1, read: true, invited: true },
+                 { job_id: 1, geek_id: 2, read: false, invited: false },
+                 { job_id: 2, geek_id: 5, read: true, invited: false },
+                 { job_id: 3, geek_id: 8, read: false, invited: false },
+             ])
+
 
 
